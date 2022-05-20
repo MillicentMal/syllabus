@@ -16,7 +16,7 @@ def csv_to_graph(folder):
     list_of_tuples = []
     careers_list = []
     try:
-        for path in pathlib.Path("csv_files").iterdir():
+        for path in pathlib.Path(folder).iterdir():
             if path.is_file():
                 with open(path, 'r') as read_obj:
                     # pass the file object to reader() to get the reader object
