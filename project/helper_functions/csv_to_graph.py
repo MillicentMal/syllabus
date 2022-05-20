@@ -32,7 +32,7 @@ def csv_to_graph(folder):
                         G.add_edge(i[1], i[2], name=i[3])
                         if i[3] not in careers_list:
                             careers_list.append(i[3])
-    except FileNotFoundError:
+    except:
         G.add_node(1, size=400, color='green')
         raise("Ooops. We seem to have lost our data")
 
