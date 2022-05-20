@@ -19,7 +19,7 @@ sources = []
 targets = []
 list_of_tuples = []
 careers_list = []
-G , careers_list = csv_to_graph('csv_files')
+G , careers_list = csv_to_graph('../csv_files')
 
 
 st.title("STUDY GUIDE MAP FOR SELF-TAUGHT TECHIES")
