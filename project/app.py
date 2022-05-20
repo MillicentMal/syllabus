@@ -9,6 +9,8 @@ import streamlit.components.v1 as components
 import pandas as pd
 import networkx as nx
 from pyvis.network import Network
+import os
+
 
 from helper_functions.csv_to_graph import csv_to_graph
 # Read dataset
@@ -19,7 +21,7 @@ sources = []
 targets = []
 list_of_tuples = []
 careers_list = []
-G , careers_list = csv_to_graph(pathlib.Path('csv_files'))
+G , careers_list = csv_to_graph(os.path.abspath('csv_files'))
 
 
 st.title("STUDY GUIDE MAP FOR SELF-TAUGHT TECHIES")
